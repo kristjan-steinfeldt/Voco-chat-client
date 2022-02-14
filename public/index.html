@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -103,7 +103,18 @@
       </div>
     </div>
   </div>
+    <div class="insertbox">
+      <div class="row">
+        <div class="col-2">
+          <div class="user text-center"><b>Guest</b></div>
+        </div>
+        <div class="col-10"><textarea type="text" id="message" name="message" maxlength="100"></textarea> 0/100</div>
+      </div>
+    </div>
+    <div class="text-right">
+      <button id="submit" type="button" class="btn btn-outline-primary ">Send</button>
+    </div>
   </div>
-  <button type="button" class="btn btn-outline-primary">Send</button>
+
   </body>
 </html>
