@@ -6,3 +6,42 @@ body{
 h1{
   margin: 0.5em;
 }
+.box{
+  background: black;
+  border: 1em outset black;
+  border-radius: 10px;
+  height: 50em;
+  margin-bottom: 10em;
+  overflow-y: scroll;
+  overflow-x:hidden;
+}
+.box::-webkit-scrollbar{
+  width: 5px;
+}
+.box::-webkit-scrollbar-track{
+  background: transparent;
+}
+.box::-webkit-scrollbar-thumb{
+  background: white;
+  border: 1em;
+  border-radius: 1em;
+  height: 50px;
+}
+
+
+.btn-outline-primary{
+  color: white;
+  border-color: white;
+}
+.textcon{
+  background:  rgb(57,57,57);
+  margin: 0.25em;
+  border-radius: 5px;
+  padding-left: 2.1em;
+  padding-right: 4.1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.1em;
+}
+.sender{
+  color: gray;
+}
