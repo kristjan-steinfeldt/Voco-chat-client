@@ -5,14 +5,9 @@ import './App.css';
 
 
 function App() {
+    const [count, setCount] = React.useState(0);
 
-    function countChars(obj :any){
-        if (obj.value.length<0)
-        { // @ts-ignore
-            document.getElementById("inputmsg").innerHTML = obj.value.length+' /100';
-        }
 
-    }
 
     const [name, setName] = useState("dummyUser")
     const [chats, setChats] = useState([
@@ -51,9 +46,9 @@ function App() {
                     </div>
                     <div className="col-10">
                 <input className="inmsg" onInput={e=>setMsg(e.currentTarget.value)} value={msg}
-                    placeholder="enter your chat"
+                    placeholder="enter your chat" onChange={e => setCount(e.target.value.length)}
                 ></input>
-                        <p id="inputmsg">0/100</p>
+                        <p>{count}/100</p>
                     </div>
                 </div>
             </div>
