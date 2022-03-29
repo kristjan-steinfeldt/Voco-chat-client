@@ -11,7 +11,7 @@ h1{
   border: 1em outset black;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 50em;
+  height: 75%;
   margin-bottom: 0em;
   overflow-y: scroll;
   overflow-x:hidden;
@@ -64,4 +64,7 @@ h1{
 #submit{
   margin: 1em;
   padding: 0.5em 2em;
+}
+.inmsg{
+  width: 100%;
 }
