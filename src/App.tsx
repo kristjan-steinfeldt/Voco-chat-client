@@ -32,8 +32,14 @@ function App() {
                     <div className="container">
                 <div className="textcon">
                     <p className="chatbox">
-                        <strong>{c.name}:</strong>
-                        <span>{c.message}</span>
+                        <div className="row">
+                            <div className="text"><span>{c.message}</span>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="sender"><strong>{c.name}</strong>
+                            </div>
+                        </div>
                     </p>
                 </div>
                     </div>
@@ -42,7 +48,9 @@ function App() {
             <div className="insertbox">
                 <div className="row">
                     <div className="col-2">
-                        <div className="user text-center"><b>Guest</b></div>
+                        <div className="user text-center">
+                            <textarea className="inmsg" onInput={e=>setName(e.currentTarget.value)} value={name}/>
+                        </div>
                     </div>
                     <div className="col-10">
                 <input className="inmsg" onInput={e=>setMsg(e.currentTarget.value)} value={msg}
